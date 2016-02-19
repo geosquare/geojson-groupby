@@ -1,0 +1,39 @@
+{
+  "name": "geojson-groupby",
+  "version": "0.0.0",
+  "description": "Group geojson features or array of json based on associated properties.",
+  "main": "geojson-groupby.js",
+  "scripts": {
+    "test": "mocha test/test.js",
+    "build-debug": "browserify geojson-groupby.js --debug --standalone GeoJSONGroupBy | exorcist dist/geojson-groupby.js.map > dist/geojson-groupby.js",
+    "build-min": "browserify geojson-groupby.js --standalone GeoJSONGroupBy | uglifyjs -c -m > dist/geojson-groupby.min.js",
+    "build": "npm run build-debug && npm run build-min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geosquare/geojson-groupby"
+  },
+  "keywords": [
+    "geojson",
+    "group",
+    "classify",
+    "group-by",
+    "categories",
+    "json"
+  ],
+  "author": "Gagan Bansal <gaganbansal123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geosquare/geojson-groupby/issues"
+  },
+  "homepage": "https://github.com/geosquare/geojson-groupby",
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "chai": "^3.5.0",
+    "dreamjs": "^0.1.5",
+    "exorcist": "^0.4.0",
+    "mocha": "^2.4.5",
+    "uglify-js": "^2.6.1"
+  },
+  "dependencies": {}
+}
