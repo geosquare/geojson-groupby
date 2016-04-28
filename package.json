@@ -1,6 +1,6 @@
 {
   "name": "geojson-groupby",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Group geojson features or array of json based on associated properties.",
   "main": "geojson-groupby.js",
   "scripts": {
